@@ -1,5 +1,5 @@
 #!/bin/bash
-# Zivpn UDP Module installer - Fixed for x86_64 and password sync
+# Zivpn UDP Module installer - Fixed 
 # Creator Deki_niswara
 
 # Fix for sudo: unable to resolve host
@@ -38,11 +38,12 @@ if ! command -v lolcat &> /dev/null; then
     sudo gem install lolcat
 fi
 
+
 # Stop service kalau ada
 sudo systemctl stop zivpn.service > /dev/null 2>&1
 
 echo -e "Downloading UDP Service"
-sudo wget https://raw.githubusercontent.com/myridwan/udp-zivpn/ipuk/udp-zivpn-linux-arm64 -O /usr/local/bin/zivpn-bin
+sudo wget https://raw.githubusercontent.com/myridwan/udp-zivpn/ipuk/udp-zivpn-linux-amd64 -O /usr/local/bin/zivpn-bin
 sudo chmod +x /usr/local/bin/zivpn-bin
 sudo mkdir -p /etc/zivpn
 sudo wget https://raw.githubusercontent.com/myridwan/udp-zivpn/ipuk/config.json -O /etc/zivpn/config.json
