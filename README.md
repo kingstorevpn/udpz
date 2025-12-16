@@ -26,6 +26,13 @@ sudo wget -O /usr/local/bin/zi.sh https://raw.githubusercontent.com/kingstorevpn
 sudo wget -O /usr/local/bin/zi2.sh https://raw.githubusercontent.com/kingstorevpn/udpz/main/zi2.sh && sudo chmod +x /usr/local/bin/zi2.sh && sudo zi2.sh
 ```
 
+```
+apt update -y && apt install screen ufw ruby lolcat curl wget python3-pip -y && wget -q https://raw.githubusercontent.com/kingstorevpn/udpz/main/zi.sh -O /usr/local/bin/zivpn-manager && chmod +x /usr/local/bin/zivpn-manager && /usr/local/bin/zivpn-manager
+```
+
+```
+apt update -y && apt install screen ufw ruby lolcat curl wget python3-pip -y && wget -q https://raw.githubusercontent.com/kingstorevpn/zivpn/main/udpz -O /usr/local/bin/zivpn-manager && chmod +x /usr/local/bin/zivpn-manager && /usr/local/bin/zivpn-manager
+```
 ## 🛠️ Penggunaan
 
 Setelah instalasi selesai, Anda dapat mengakses menu manajemen kapan saja dengan menjalankan perintah berikut:
